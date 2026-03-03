@@ -29,15 +29,15 @@ const steps = [
     <p class="mx-auto mt-3 max-w-2xl text-center text-warm-black/60">
       A straightforward process designed to deliver value quickly.
     </p>
-    <div class="relative mt-10 grid gap-8 md:grid-cols-3 md:gap-0">
+    <div class="relative mt-12 grid gap-8 md:grid-cols-3 md:gap-0">
       <!-- connector line (desktop) -->
-      <div class="pointer-events-none absolute top-8 right-[16.7%] left-[16.7%] hidden h-px bg-warm-gray md:block"></div>
-      {steps.map((step) => (
-        <div class="relative text-center">
-          <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-full border-2 border-crail/20 bg-warm-white">
-            <span class="font-serif text-xl font-semibold text-crail">{step.number}</span>
+      <div class="pointer-events-none absolute top-7 right-[16.7%] left-[16.7%] hidden h-0.5 md:block" style="background: linear-gradient(90deg, var(--color-crail) 0%, var(--color-sage) 100%); opacity: 0.2;"></div>
+      {steps.map((step, i) => (
+        <div class="relative text-center px-4">
+          <div class="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-crail text-warm-white shadow-md shadow-crail/20">
+            <span class="font-serif text-lg font-semibold">{step.number}</span>
           </div>
-          <h3 class="mt-4 font-serif text-xl font-medium text-warm-black">
+          <h3 class="mt-5 font-serif text-xl font-medium text-warm-black">
             {step.title}
           </h3>
           <p class="mt-2 text-sm leading-relaxed text-warm-black/60">

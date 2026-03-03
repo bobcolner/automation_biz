@@ -1,0 +1,18 @@
+---
+const tools = ["n8n", "Make", "Zapier", "Python", "Claude AI", "Google Workspace", "Slack", "HubSpot"];
+---
+
+<section class="border-y border-warm-gray bg-warm-white px-6 py-10">
+  <div class="mx-auto max-w-5xl">
+    <p class="mb-6 text-center text-xs font-medium uppercase tracking-widest text-warm-black/35">
+      Tools we work with
+    </p>
+    <div class="flex flex-wrap items-center justify-center gap-x-8 gap-y-3">
+      {tools.map((tool) => (
+        <span class="text-sm font-medium text-warm-black/30 transition-colors hover:text-warm-black/50">
+          {tool}
+        </span>
+      ))}
+    </div>
+  </div>
+</section>

@@ -37,7 +37,7 @@
   </svg>
 
   <!-- soft radial glow -->
-  <div class="pointer-events-none absolute -top-32 left-1/2 h-[400px] w-[700px] -translate-x-1/2 rounded-full bg-crail/8 blur-3xl"></div>
+  <div class="pointer-events-none absolute -top-20 left-1/2 h-[500px] w-[800px] -translate-x-1/2 rounded-full bg-crail/10 blur-3xl"></div>
 
   <div class="relative mx-auto max-w-3xl text-center">
     <p class="mb-4 text-sm font-medium tracking-widest uppercase text-crail">
@@ -50,12 +50,15 @@
       We help small and mid-size businesses eliminate repetitive tasks, connect
       their tools, and build automations that actually stick.
     </p>
-    <a
-      href="#contact"
-      class="mt-8 inline-block rounded-full bg-crail px-8 py-3.5 text-sm font-medium text-warm-white transition-colors hover:bg-crail-hover"
-    >
-      Get a free automation audit
-    </a>
+    <div class="mt-8">
+      <a
+        href="#contact"
+        class="hero-cta inline-block rounded-full bg-crail px-9 py-4 text-base font-medium text-warm-white transition-all hover:bg-crail-hover hover:shadow-lg hover:shadow-crail/20"
+      >
+        Get a free automation audit
+      </a>
+    </div>
+    <p class="mt-6 text-sm text-warm-white/35">No commitment. We'll show you what's possible.</p>
   </div>
 </section>
 
@@ -66,5 +69,11 @@
       linear-gradient(rgba(255,255,255,0.06) 1px, transparent 1px),
       linear-gradient(90deg, rgba(255,255,255,0.06) 1px, transparent 1px);
     background-size: 80px 80px;
+  }
+  .hero-cta {
+    box-shadow: 0 0 20px rgba(193,95,60,0.25), 0 0 60px rgba(193,95,60,0.08);
+  }
+  .hero-cta:hover {
+    box-shadow: 0 0 25px rgba(193,95,60,0.35), 0 0 80px rgba(193,95,60,0.12);
   }
 </style>

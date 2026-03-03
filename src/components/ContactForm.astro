@@ -3,8 +3,23 @@
 const formspreeAction = "https://formspree.io/f/YOUR_FORM_ID";
 ---
 
-<section id="contact" class="bg-warm-black px-6 py-16 md:py-20">
-  <div class="mx-auto max-w-xl">
+<section id="contact" class="contact-bg relative overflow-hidden px-6 py-16 md:py-20">
+  <!-- reuse the geometric pattern from the hero for visual consistency -->
+  <svg
+    class="pointer-events-none absolute inset-0 h-full w-full"
+    viewBox="0 0 1200 500"
+    preserveAspectRatio="xMidYMid slice"
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+  >
+    <circle cx="100" cy="100" r="200" stroke="rgba(193,95,60,0.10)" stroke-width="1" />
+    <circle cx="100" cy="100" r="140" stroke="rgba(193,95,60,0.07)" stroke-width="1" />
+    <circle cx="1100" cy="400" r="180" stroke="rgba(107,127,107,0.10)" stroke-width="1" />
+    <circle cx="1100" cy="400" r="120" stroke="rgba(107,127,107,0.07)" stroke-width="1" />
+    <line x1="300" y1="0" x2="900" y2="500" stroke="rgba(255,255,255,0.03)" stroke-width="1" />
+  </svg>
+
+  <div class="relative mx-auto max-w-xl">
     <h2 class="font-serif text-3xl font-semibold text-center text-warm-white">
       Let's talk about what you can automate
     </h2>
@@ -74,7 +89,7 @@ const formspreeAction = "https://formspree.io/f/YOUR_FORM_ID";
 
       <button
         type="submit"
-        class="w-full rounded-full bg-crail px-8 py-3 text-sm font-medium text-warm-white transition-colors hover:bg-crail-hover"
+        class="w-full rounded-full bg-crail px-8 py-3 text-sm font-medium text-warm-white transition-all hover:bg-crail-hover hover:shadow-lg hover:shadow-crail/20"
       >
         Send message
       </button>
@@ -85,3 +100,13 @@ const formspreeAction = "https://formspree.io/f/YOUR_FORM_ID";
     </p>
   </div>
 </section>
+
+<style>
+  .contact-bg {
+    background-color: var(--color-warm-black);
+    background-image:
+      linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+    background-size: 80px 80px;
+  }
+</style>

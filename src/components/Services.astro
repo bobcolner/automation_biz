@@ -79,8 +79,8 @@ const services = [
     </p>
     <div class="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
       {services.map((service) => (
-        <div class="group rounded-xl border border-warm-gray bg-warm-white p-6 transition-all hover:border-crail/30 hover:shadow-sm">
-          <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-crail/10 text-crail">
+        <div class="group rounded-xl border border-warm-gray bg-warm-white p-6 transition-all duration-200 hover:-translate-y-1 hover:border-crail/30 hover:shadow-md hover:shadow-warm-black/5">
+          <div class="flex h-11 w-11 items-center justify-center rounded-lg bg-crail/10 text-crail transition-colors group-hover:bg-crail/15">
             <Fragment set:html={service.icon} />
           </div>
           <h3 class="mt-4 font-serif text-lg font-medium text-warm-black">
@@ -92,7 +92,7 @@ const services = [
           <ul class="mt-3 space-y-1">
             {service.examples.map((example) => (
               <li class="flex items-start gap-2 text-sm text-warm-black/50">
-                <span class="mt-1.5 h-1 w-1 flex-shrink-0 rounded-full bg-crail/40" />
+                <span class="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-crail/30" />
                 {example}
               </li>
             ))}

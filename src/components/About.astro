@@ -4,11 +4,13 @@ const team = [
     name: "Bob Colner",
     role: "Data & Engineering",
     bio: "10-year Silicon Valley veteran specializing in data science, data engineering, and business analytics. Bob designs and builds the automation systems that make everything run.",
+    initials: "BC",
   },
   {
     name: "Ben Charney",
     role: "Sales & Operations",
     bio: "Deep background in sales and business operations. Ben works directly with clients to understand their workflows, identify high-impact opportunities, and keep projects on track.",
+    initials: "BC",
   },
 ];
 ---
@@ -22,15 +24,18 @@ const team = [
       A small team that's done this at scale — now helping growing businesses get the same leverage.
     </p>
     <div class="mt-10 grid gap-6 md:grid-cols-2">
-      {team.map((person) => (
-        <div class="rounded-xl border border-warm-gray bg-warm-white p-6">
+      {team.map((person, i) => (
+        <div class="rounded-xl border border-warm-gray bg-warm-white p-6 shadow-sm">
           <div class="flex items-center gap-4">
-            <div class="flex h-12 w-12 items-center justify-center rounded-full bg-crail/10 font-serif text-lg font-semibold text-crail">
-              {person.name.split(" ").map((n) => n[0]).join("")}
+            <div class:list={[
+              "flex h-14 w-14 items-center justify-center rounded-full font-serif text-lg font-semibold text-warm-white shadow-sm",
+              i === 0 ? "bg-crail" : "bg-sage"
+            ]}>
+              {person.initials}
             </div>
             <div>
               <h3 class="font-serif text-lg font-medium text-warm-black">{person.name}</h3>
-              <p class="text-sm text-crail">{person.role}</p>
+              <p class="text-sm font-medium text-crail">{person.role}</p>
             </div>
           </div>
           <p class="mt-4 text-sm leading-relaxed text-warm-black/60">
