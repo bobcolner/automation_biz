@@ -5,10 +5,10 @@ const { about } = content;
 
 <section id="about" class="border-t border-warm-gray bg-card px-6 py-16 md:py-20">
   <div class="mx-auto max-w-4xl">
-    <h2 class="font-serif text-3xl font-semibold text-center text-warm-black">
+    <h2 class="font-serif text-4xl font-semibold text-center text-warm-black">
       {about.heading}
     </h2>
-    <p class="mx-auto mt-3 max-w-2xl text-center text-warm-black/60">
+    <p class="mx-auto mt-3 max-w-2xl text-center text-warm-black/60 text-lg">
       {about.subheading}
     </p>
     <div class="mt-10 grid gap-6 md:grid-cols-2">
@@ -22,11 +22,11 @@ const { about } = content;
               {person.initials}
             </div>
             <div>
-              <h3 class="font-serif text-lg font-medium text-warm-black">{person.name}</h3>
+              <h3 class="font-serif text-xl font-medium text-warm-black">{person.name}</h3>
               <p class="text-sm font-medium text-crail">{person.role}</p>
             </div>
           </div>
-          <p class="mt-4 text-sm leading-relaxed text-warm-black/60">
+          <p class="mt-4 text-base leading-relaxed text-warm-black/60">
             {person.bio}
           </p>
         </div>

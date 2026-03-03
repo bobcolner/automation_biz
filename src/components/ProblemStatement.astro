@@ -11,10 +11,10 @@ const icons = [
 
 <section class="px-6 py-16 md:py-20">
   <div class="mx-auto max-w-5xl">
-    <h2 class="font-serif text-3xl font-semibold text-center text-warm-black">
+    <h2 class="font-serif text-4xl font-semibold text-center text-warm-black">
       {problemStatement.heading}
     </h2>
-    <p class="mx-auto mt-3 max-w-2xl text-center text-warm-black/60">
+    <p class="mx-auto mt-3 max-w-2xl text-center text-warm-black/60 text-lg">
       {problemStatement.subheading}
     </p>
     <div class="mt-10 grid gap-5 md:grid-cols-3">
@@ -23,10 +23,10 @@ const icons = [
           <div class="mb-3 text-crail/70">
             <Fragment set:html={icons[i]} />
           </div>
-          <h3 class="font-serif text-lg font-medium text-warm-black">
+          <h3 class="font-serif text-xl font-medium text-warm-black">
             {point.title}
           </h3>
-          <p class="mt-2 text-sm leading-relaxed text-warm-black/60">
+          <p class="mt-2 text-base leading-relaxed text-warm-black/60">
             {point.description}
           </p>
         </div>

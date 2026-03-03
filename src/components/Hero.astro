@@ -37,8 +37,8 @@ const { business, hero } = content;
     <p class="mb-4 text-sm font-medium tracking-widest uppercase text-crail">
       {business.name}
     </p>
-    <h1 class="font-serif text-4xl font-semibold leading-tight tracking-tight text-warm-white md:text-5xl lg:text-6xl" set:html={hero.tagline} />
-    <p class="mx-auto mt-5 max-w-xl text-lg leading-relaxed text-warm-white/60">
+    <h1 class="font-serif text-5xl font-semibold leading-tight tracking-tight text-warm-white md:text-6xl lg:text-7xl" set:html={hero.tagline} />
+    <p class="mx-auto mt-5 max-w-xl text-xl leading-relaxed text-warm-white/60">
       {hero.subtitle}
     </p>
     <div class="mt-8">
@@ -49,7 +49,7 @@ const { business, hero } = content;
         {hero.ctaText}
       </a>
     </div>
-    <p class="mt-6 text-sm text-warm-white/35">{hero.ctaSubtext}</p>
+    <p class="mt-6 text-base text-warm-white/35">{hero.ctaSubtext}</p>
   </div>
 </section>
 

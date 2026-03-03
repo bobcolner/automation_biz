@@ -115,7 +115,12 @@
     ]
   },
 
-  "tools": ["n8n", "Make", "Zapier", "Python", "Claude AI", "Google Workspace", "Slack", "HubSpot"],
+  "security": {
+    "heading": "Your data stays yours",
+    "subheading": "Every engagement includes a data security review. We audit access, enforce permissions, and make sure your data is secure."
+  },
+
+  "tools": ["n8n", "Make", "Zapier", "Python", "Google Workspace", "Slack", "HubSpot"],
 
   "about": {
     "heading": "Who we are",
