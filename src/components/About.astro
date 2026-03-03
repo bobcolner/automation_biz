@@ -1,30 +1,18 @@
 ---
-const team = [
-  {
-    name: "Bob Colner",
-    role: "Data & Engineering",
-    bio: "10-year Silicon Valley veteran specializing in data science, data engineering, and business analytics. Bob designs and builds the automation systems that make everything run.",
-    initials: "BC",
-  },
-  {
-    name: "Ben Charney",
-    role: "Sales & Operations",
-    bio: "Deep background in sales and business operations. Ben works directly with clients to understand their workflows, identify high-impact opportunities, and keep projects on track.",
-    initials: "BC",
-  },
-];
+import content from "../data/content.json";
+const { about } = content;
 ---
 
 <section id="about" class="border-t border-warm-gray bg-card px-6 py-16 md:py-20">
   <div class="mx-auto max-w-4xl">
     <h2 class="font-serif text-3xl font-semibold text-center text-warm-black">
-      Who we are
+      {about.heading}
     </h2>
     <p class="mx-auto mt-3 max-w-2xl text-center text-warm-black/60">
-      A small team that's done this at scale — now helping growing businesses get the same leverage.
+      {about.subheading}
     </p>
     <div class="mt-10 grid gap-6 md:grid-cols-2">
-      {team.map((person, i) => (
+      {about.team.map((person, i) => (
         <div class="rounded-xl border border-warm-gray bg-warm-white p-6 shadow-sm">
           <div class="flex items-center gap-4">
             <div class:list={[

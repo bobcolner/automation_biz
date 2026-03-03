@@ -1,0 +1,148 @@
+{
+  "business": {
+    "name": "Workflow Partners",
+    "email": "hello@workflowpartners.com",
+    "pageTitle": "Workflow Partners — Automation for Growing Businesses",
+    "metaDescription": "Automation consulting for small and mid-size businesses. We audit your workflows, build custom automations, and keep them running."
+  },
+
+  "hero": {
+    "tagline": "Stop doing work a machine should do",
+    "subtitle": "We help small and mid-size businesses eliminate repetitive tasks, connect their tools, and build automations that actually stick.",
+    "ctaText": "Get a free automation audit",
+    "ctaSubtext": "No commitment. We'll show you what's possible."
+  },
+
+  "problemStatement": {
+    "heading": "Sound familiar?",
+    "subheading": "Most growing businesses hit the same walls once manual processes can't keep up.",
+    "painPoints": [
+      {
+        "title": "Manual data entry everywhere",
+        "description": "Your team copies information between tools, reformats spreadsheets, and double-checks records that should update themselves."
+      },
+      {
+        "title": "Disconnected tools",
+        "description": "Your CRM doesn't talk to your invoicing. Your forms don't feed your project tracker. Nothing is wired together."
+      },
+      {
+        "title": "Things falling through cracks",
+        "description": "Follow-ups get missed, onboarding steps get skipped, and important notifications never reach the right person."
+      }
+    ]
+  },
+
+  "services": {
+    "heading": "What we automate",
+    "subheading": "Six areas where most small businesses lose the most time.",
+    "items": [
+      {
+        "title": "Client & Lead Management",
+        "description": "Capture leads, onboard new clients, and nurture prospects without manual follow-up.",
+        "examples": [
+          "Automated client onboarding workflows",
+          "Lead routing & CRM updates",
+          "Follow-up email sequences",
+          "Appointment scheduling"
+        ]
+      },
+      {
+        "title": "Billing & Financial Ops",
+        "description": "Automate invoicing, payment tracking, and financial data sync across your tools.",
+        "examples": [
+          "Invoice & payment automation",
+          "Expense matching to jobs",
+          "AP/AR sync across systems"
+        ]
+      },
+      {
+        "title": "Documents & Data Collection",
+        "description": "Collect, organize, and extract data from documents and forms automatically.",
+        "examples": [
+          "Document collection & filing",
+          "AI-powered form processing",
+          "Email sorting & routing"
+        ]
+      },
+      {
+        "title": "Reporting & Analytics",
+        "description": "Consolidate data from multiple tools into dashboards and automated reports.",
+        "examples": [
+          "Automated reporting & dashboards",
+          "KPI alerts & anomaly detection",
+          "Cross-system data consolidation"
+        ]
+      },
+      {
+        "title": "Internal Ops & Productivity",
+        "description": "Keep your team organized with automated task creation, notifications, and provisioning.",
+        "examples": [
+          "Task assignment & project kickoffs",
+          "Internal alerts & notifications",
+          "Account & access provisioning"
+        ]
+      },
+      {
+        "title": "Inventory & Supply Chain",
+        "description": "Sync inventory levels, track purchase orders, and get alerts before stock runs out.",
+        "examples": [
+          "Inventory syncing & low-stock alerts",
+          "Purchase order tracking"
+        ]
+      }
+    ]
+  },
+
+  "howItWorks": {
+    "heading": "How it works",
+    "subheading": "A straightforward process designed to deliver value quickly.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Audit",
+        "description": "We map your current workflows, identify bottlenecks, and find the highest-impact automations — then present a clear plan with expected ROI."
+      },
+      {
+        "number": "02",
+        "title": "Build",
+        "description": "We design and implement your automations using the right tools for the job — n8n, Make, Zapier, or custom code — tested and documented."
+      },
+      {
+        "number": "03",
+        "title": "Support",
+        "description": "We monitor, maintain, and iterate on your automations so they keep working as your business evolves. No set-it-and-forget-it."
+      }
+    ]
+  },
+
+  "tools": ["n8n", "Make", "Zapier", "Python", "Claude AI", "Google Workspace", "Slack", "HubSpot"],
+
+  "about": {
+    "heading": "Who we are",
+    "subheading": "A small team that's done this at scale — now helping growing businesses get the same leverage.",
+    "team": [
+      {
+        "name": "Bob Colner",
+        "role": "Data & Engineering",
+        "bio": "10-year Silicon Valley veteran specializing in data science, data engineering, and business analytics. Bob designs and builds the automation systems that make everything run.",
+        "initials": "BC"
+      },
+      {
+        "name": "Ben Charney",
+        "role": "Sales & Operations",
+        "bio": "Deep background in sales and business operations. Ben works directly with clients to understand their workflows, identify high-impact opportunities, and keep projects on track.",
+        "initials": "BC"
+      }
+    ]
+  },
+
+  "contact": {
+    "heading": "Let's talk about what you can automate",
+    "subheading": "Tell us a bit about your business and we'll come back with ideas.",
+    "submitText": "Send message",
+    "successHeading": "Message received",
+    "successMessage": "We'll get back to you within one business day.",
+    "errorMessage": "Something went wrong. Please try again or email us directly.",
+    "privacyNote": "We'll only use your info to follow up on your inquiry. No spam, ever."
+  }
+}

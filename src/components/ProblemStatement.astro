@@ -1,39 +1,27 @@
 ---
-const painPoints = [
-  {
-    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4"/><path d="m15.2 7.6 2.8-2.8"/><path d="M18 12h4"/><path d="m15.2 16.4 2.8 2.8"/><path d="M12 18v4"/><path d="m4.9 19.1 2.8-2.8"/><path d="M2 12h4"/><path d="m4.9 4.9 2.8 2.8"/></svg>`,
-    title: "Manual data entry everywhere",
-    description:
-      "Your team copies information between tools, reformats spreadsheets, and double-checks records that should update themselves.",
-  },
-  {
-    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>`,
-    title: "Disconnected tools",
-    description:
-      "Your CRM doesn't talk to your invoicing. Your forms don't feed your project tracker. Nothing is wired together.",
-  },
-  {
-    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg>`,
-    title: "Things falling through cracks",
-    description:
-      "Follow-ups get missed, onboarding steps get skipped, and important notifications never reach the right person.",
-  },
+import content from "../data/content.json";
+const { problemStatement } = content;
+
+const icons = [
+  `<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4"/><path d="m15.2 7.6 2.8-2.8"/><path d="M18 12h4"/><path d="m15.2 16.4 2.8 2.8"/><path d="M12 18v4"/><path d="m4.9 19.1 2.8-2.8"/><path d="M2 12h4"/><path d="m4.9 4.9 2.8 2.8"/></svg>`,
+  `<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>`,
+  `<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg>`,
 ];
 ---
 
 <section class="px-6 py-16 md:py-20">
   <div class="mx-auto max-w-5xl">
     <h2 class="font-serif text-3xl font-semibold text-center text-warm-black">
-      Sound familiar?
+      {problemStatement.heading}
     </h2>
     <p class="mx-auto mt-3 max-w-2xl text-center text-warm-black/60">
-      Most growing businesses hit the same walls once manual processes can't keep up.
+      {problemStatement.subheading}
     </p>
     <div class="mt-10 grid gap-5 md:grid-cols-3">
-      {painPoints.map((point) => (
+      {problemStatement.painPoints.map((point, i) => (
         <div class="rounded-xl border-l-4 border-crail bg-card p-6">
           <div class="mb-3 text-crail/70">
-            <Fragment set:html={point.icon} />
+            <Fragment set:html={icons[i]} />
           </div>
           <h3 class="font-serif text-lg font-medium text-warm-black">
             {point.title}

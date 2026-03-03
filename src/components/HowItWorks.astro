@@ -1,38 +1,19 @@
 ---
-const steps = [
-  {
-    number: "01",
-    title: "Audit",
-    description:
-      "We map your current workflows, identify bottlenecks, and find the highest-impact automations — then present a clear plan with expected ROI.",
-  },
-  {
-    number: "02",
-    title: "Build",
-    description:
-      "We design and implement your automations using the right tools for the job — n8n, Make, Zapier, or custom code — tested and documented.",
-  },
-  {
-    number: "03",
-    title: "Support",
-    description:
-      "We monitor, maintain, and iterate on your automations so they keep working as your business evolves. No set-it-and-forget-it.",
-  },
-];
+import content from "../data/content.json";
+const { howItWorks } = content;
 ---
 
 <section id="how-it-works" class="px-6 py-16 md:py-20">
   <div class="mx-auto max-w-5xl">
     <h2 class="font-serif text-3xl font-semibold text-center text-warm-black">
-      How it works
+      {howItWorks.heading}
     </h2>
     <p class="mx-auto mt-3 max-w-2xl text-center text-warm-black/60">
-      A straightforward process designed to deliver value quickly.
+      {howItWorks.subheading}
     </p>
     <div class="relative mt-12 grid gap-8 md:grid-cols-3 md:gap-0">
-      <!-- connector line (desktop) -->
       <div class="pointer-events-none absolute top-7 right-[16.7%] left-[16.7%] hidden h-0.5 md:block" style="background: linear-gradient(90deg, var(--color-crail) 0%, var(--color-sage) 100%); opacity: 0.2;"></div>
-      {steps.map((step, i) => (
+      {howItWorks.steps.map((step) => (
         <div class="relative text-center px-4">
           <div class="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-crail text-warm-white shadow-md shadow-crail/20">
             <span class="font-serif text-lg font-semibold">{step.number}</span>

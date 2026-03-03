@@ -1,8 +1,9 @@
 ---
+import content from "../data/content.json";
+const { contact } = content;
 ---
 
 <section id="contact" class="contact-bg relative overflow-hidden px-6 py-16 md:py-20">
-  <!-- geometric pattern -->
   <svg
     class="pointer-events-none absolute inset-0 h-full w-full"
     viewBox="0 0 1200 500"
@@ -19,10 +20,10 @@
 
   <div class="relative mx-auto max-w-xl">
     <h2 class="font-serif text-3xl font-semibold text-center text-warm-white">
-      Let's talk about what you can automate
+      {contact.heading}
     </h2>
     <p class="mx-auto mt-3 max-w-md text-center text-warm-white/50">
-      Tell us a bit about your business and we'll come back with ideas.
+      {contact.subheading}
     </p>
 
     <form
@@ -93,26 +94,24 @@
         id="submit-btn"
         class="w-full rounded-full bg-crail px-8 py-3 text-sm font-medium text-warm-white transition-all hover:bg-crail-hover hover:shadow-lg hover:shadow-crail/20"
       >
-        Send message
+        {contact.submitText}
       </button>
     </form>
 
-    <!-- success message (hidden by default) -->
     <div id="success-msg" class="mt-8 hidden text-center">
       <div class="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-crail/15">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-crail"><path d="M20 6 9 17l-5-5"/></svg>
       </div>
-      <p class="font-serif text-xl font-medium text-warm-white">Message received</p>
-      <p class="mt-2 text-sm text-warm-white/50">We'll get back to you within one business day.</p>
+      <p class="font-serif text-xl font-medium text-warm-white">{contact.successHeading}</p>
+      <p class="mt-2 text-sm text-warm-white/50">{contact.successMessage}</p>
     </div>
 
-    <!-- error message (hidden by default) -->
     <div id="error-msg" class="mt-4 hidden text-center text-sm text-crail">
-      Something went wrong. Please try again or email us directly.
+      {contact.errorMessage}
     </div>
 
     <p id="privacy-note" class="mt-4 text-center text-xs text-warm-white/30">
-      We'll only use your info to follow up on your inquiry. No spam, ever.
+      {contact.privacyNote}
     </p>
   </div>
 </section>
