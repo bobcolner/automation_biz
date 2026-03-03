@@ -1,0 +1,42 @@
+---
+const painPoints = [
+  {
+    title: "Manual data entry everywhere",
+    description:
+      "Your team copies information between tools, reformats spreadsheets, and double-checks records that should update themselves.",
+  },
+  {
+    title: "Disconnected tools",
+    description:
+      "Your CRM doesn't talk to your invoicing. Your forms don't feed your project tracker. Nothing is wired together.",
+  },
+  {
+    title: "Things falling through cracks",
+    description:
+      "Follow-ups get missed, onboarding steps get skipped, and important notifications never reach the right person.",
+  },
+];
+---
+
+<section class="px-6 py-16 md:py-20">
+  <div class="mx-auto max-w-5xl">
+    <h2 class="font-serif text-3xl font-semibold text-center text-warm-black">
+      Sound familiar?
+    </h2>
+    <p class="mx-auto mt-3 max-w-2xl text-center text-warm-black/60">
+      Most growing businesses hit the same walls once manual processes can't keep up.
+    </p>
+    <div class="mt-10 grid gap-5 md:grid-cols-3">
+      {painPoints.map((point) => (
+        <div class="rounded-xl border-l-4 border-crail/40 bg-card p-6">
+          <h3 class="font-serif text-lg font-medium text-warm-black">
+            {point.title}
+          </h3>
+          <p class="mt-2 text-sm leading-relaxed text-warm-black/60">
+            {point.description}
+          </p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

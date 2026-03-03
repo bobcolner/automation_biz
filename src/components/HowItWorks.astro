@@ -1,0 +1,50 @@
+---
+const steps = [
+  {
+    number: "01",
+    title: "Audit",
+    description:
+      "We map your current workflows, identify bottlenecks, and find the highest-impact automations — then present a clear plan with expected ROI.",
+  },
+  {
+    number: "02",
+    title: "Build",
+    description:
+      "We design and implement your automations using the right tools for the job — n8n, Make, Zapier, or custom code — tested and documented.",
+  },
+  {
+    number: "03",
+    title: "Support",
+    description:
+      "We monitor, maintain, and iterate on your automations so they keep working as your business evolves. No set-it-and-forget-it.",
+  },
+];
+---
+
+<section id="how-it-works" class="px-6 py-16 md:py-20">
+  <div class="mx-auto max-w-5xl">
+    <h2 class="font-serif text-3xl font-semibold text-center text-warm-black">
+      How it works
+    </h2>
+    <p class="mx-auto mt-3 max-w-2xl text-center text-warm-black/60">
+      A straightforward process designed to deliver value quickly.
+    </p>
+    <div class="relative mt-10 grid gap-8 md:grid-cols-3 md:gap-0">
+      <!-- connector line (desktop) -->
+      <div class="pointer-events-none absolute top-8 right-[16.7%] left-[16.7%] hidden h-px bg-warm-gray md:block"></div>
+      {steps.map((step) => (
+        <div class="relative text-center">
+          <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-full border-2 border-crail/20 bg-warm-white">
+            <span class="font-serif text-xl font-semibold text-crail">{step.number}</span>
+          </div>
+          <h3 class="mt-4 font-serif text-xl font-medium text-warm-black">
+            {step.title}
+          </h3>
+          <p class="mt-2 text-sm leading-relaxed text-warm-black/60">
+            {step.description}
+          </p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

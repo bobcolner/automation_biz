@@ -1,0 +1,87 @@
+---
+// Replace YOUR_FORM_ID with your Formspree form ID after creating an account at https://formspree.io
+const formspreeAction = "https://formspree.io/f/YOUR_FORM_ID";
+---
+
+<section id="contact" class="bg-warm-black px-6 py-16 md:py-20">
+  <div class="mx-auto max-w-xl">
+    <h2 class="font-serif text-3xl font-semibold text-center text-warm-white">
+      Let's talk about what you can automate
+    </h2>
+    <p class="mx-auto mt-3 max-w-md text-center text-warm-white/50">
+      Tell us a bit about your business and we'll come back with ideas.
+    </p>
+
+    <form
+      action={formspreeAction}
+      method="POST"
+      class="mt-8 space-y-4"
+    >
+      <div class="grid gap-4 sm:grid-cols-2">
+        <div>
+          <label for="name" class="block text-sm font-medium text-warm-white/70">
+            Name <span class="text-crail">*</span>
+          </label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            required
+            class="mt-1 w-full rounded-lg border border-white/10 bg-white/5 px-4 py-2.5 text-warm-white placeholder:text-warm-white/25 focus:border-crail focus:outline-none focus:ring-1 focus:ring-crail"
+            placeholder="Your name"
+          />
+        </div>
+        <div>
+          <label for="email" class="block text-sm font-medium text-warm-white/70">
+            Email <span class="text-crail">*</span>
+          </label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            required
+            class="mt-1 w-full rounded-lg border border-white/10 bg-white/5 px-4 py-2.5 text-warm-white placeholder:text-warm-white/25 focus:border-crail focus:outline-none focus:ring-1 focus:ring-crail"
+            placeholder="you@company.com"
+          />
+        </div>
+      </div>
+
+      <div>
+        <label for="company" class="block text-sm font-medium text-warm-white/70">
+          Company
+        </label>
+        <input
+          type="text"
+          name="company"
+          id="company"
+          class="mt-1 w-full rounded-lg border border-white/10 bg-white/5 px-4 py-2.5 text-warm-white placeholder:text-warm-white/25 focus:border-crail focus:outline-none focus:ring-1 focus:ring-crail"
+          placeholder="Your company (optional)"
+        />
+      </div>
+
+      <div>
+        <label for="message" class="block text-sm font-medium text-warm-white/70">
+          What are you looking to automate?
+        </label>
+        <textarea
+          name="message"
+          id="message"
+          rows="3"
+          class="mt-1 w-full rounded-lg border border-white/10 bg-white/5 px-4 py-2.5 text-warm-white placeholder:text-warm-white/25 focus:border-crail focus:outline-none focus:ring-1 focus:ring-crail resize-none"
+          placeholder="Tell us about the manual processes eating up your time (optional)"
+        ></textarea>
+      </div>
+
+      <button
+        type="submit"
+        class="w-full rounded-full bg-crail px-8 py-3 text-sm font-medium text-warm-white transition-colors hover:bg-crail-hover"
+      >
+        Send message
+      </button>
+    </form>
+
+    <p class="mt-4 text-center text-xs text-warm-white/30">
+      We'll only use your info to follow up on your inquiry. No spam, ever.
+    </p>
+  </div>
+</section>

@@ -1,0 +1,43 @@
+---
+const team = [
+  {
+    name: "Bob Colner",
+    role: "Data & Engineering",
+    bio: "10-year Silicon Valley veteran specializing in data science, data engineering, and business analytics. Bob designs and builds the automation systems that make everything run.",
+  },
+  {
+    name: "Ben Charney",
+    role: "Sales & Operations",
+    bio: "Deep background in sales and business operations. Ben works directly with clients to understand their workflows, identify high-impact opportunities, and keep projects on track.",
+  },
+];
+---
+
+<section id="about" class="border-t border-warm-gray bg-card px-6 py-16 md:py-20">
+  <div class="mx-auto max-w-4xl">
+    <h2 class="font-serif text-3xl font-semibold text-center text-warm-black">
+      Who we are
+    </h2>
+    <p class="mx-auto mt-3 max-w-2xl text-center text-warm-black/60">
+      A small team that's done this at scale — now helping growing businesses get the same leverage.
+    </p>
+    <div class="mt-10 grid gap-6 md:grid-cols-2">
+      {team.map((person) => (
+        <div class="rounded-xl border border-warm-gray bg-warm-white p-6">
+          <div class="flex items-center gap-4">
+            <div class="flex h-12 w-12 items-center justify-center rounded-full bg-crail/10 font-serif text-lg font-semibold text-crail">
+              {person.name.split(" ").map((n) => n[0]).join("")}
+            </div>
+            <div>
+              <h3 class="font-serif text-lg font-medium text-warm-black">{person.name}</h3>
+              <p class="text-sm text-crail">{person.role}</p>
+            </div>
+          </div>
+          <p class="mt-4 text-sm leading-relaxed text-warm-black/60">
+            {person.bio}
+          </p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
