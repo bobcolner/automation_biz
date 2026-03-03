@@ -1,6 +1,4 @@
 ---
-// Replace YOUR_FORM_ID with your Formspree form ID after creating an account at https://formspree.io
-const formspreeAction = "https://formspree.io/f/YOUR_FORM_ID";
 ---
 
 <section id="contact" class="contact-bg relative overflow-hidden px-6 py-16 md:py-20">
@@ -28,8 +26,10 @@ const formspreeAction = "https://formspree.io/f/YOUR_FORM_ID";
     </p>
 
     <form
-      action={formspreeAction}
+      name="contact"
       method="POST"
+      data-netlify="true"
+      action="/thank-you"
       class="mt-8 space-y-4"
     >
       <div class="grid gap-4 sm:grid-cols-2">
