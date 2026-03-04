@@ -141,6 +141,147 @@
     ]
   },
 
+  "useCases": {
+    "heading": "Use Cases",
+    "subheading": "See how we tackle the most common automation challenges for growing businesses.",
+    "items": [
+      {
+        "slug": "client-lead-management",
+        "title": "Client & Lead Management",
+        "problem": "Your team spends hours manually entering leads, copying contact info between tools, and sending follow-up emails one at a time. Prospects slip through the cracks because there's no system keeping track of who needs attention next.",
+        "solution": "We build automated pipelines that capture leads from every source, route them to the right person, trigger personalized follow-ups, and keep your CRM updated — so nothing gets missed and your team focuses on closing, not copying.",
+        "workflows": [
+          {
+            "name": "Web Form to CRM Pipeline",
+            "description": "New form submissions are automatically enriched, deduplicated, and added to your CRM with the right owner and stage assigned."
+          },
+          {
+            "name": "Automated Follow-Up Sequences",
+            "description": "Multi-step email and SMS sequences trigger based on lead behavior — opened, clicked, no response — keeping prospects warm without manual effort."
+          },
+          {
+            "name": "Client Onboarding Workflow",
+            "description": "Once a deal closes, automatically send welcome emails, collect documents, create project folders, and assign onboarding tasks to your team."
+          },
+          {
+            "name": "Appointment Scheduling & Reminders",
+            "description": "Prospects book directly from your calendar link. Confirmations, reminders, and follow-ups happen automatically."
+          }
+        ],
+        "tools": ["HubSpot", "Salesforce", "n8n", "Google Workspace", "Calendly", "Slack"]
+      },
+      {
+        "slug": "billing-financial-ops",
+        "title": "Billing & Financial Ops",
+        "problem": "Invoices are created manually, payments are tracked in spreadsheets, and matching expenses to the right job takes hours of bookkeeping. Financial data lives in multiple systems that don't talk to each other.",
+        "solution": "We connect your billing, accounting, and project tools so invoices are generated automatically, payments are tracked in real time, and financial data stays consistent across every system without manual re-entry.",
+        "workflows": [
+          {
+            "name": "Auto-Invoice on Milestone",
+            "description": "When a project hits a billing milestone, an invoice is automatically generated in QuickBooks or Stripe and sent to the client."
+          },
+          {
+            "name": "Payment Received Notifications",
+            "description": "When a payment lands, your team gets notified in Slack, the CRM record updates, and the project status advances automatically."
+          },
+          {
+            "name": "Expense-to-Job Matching",
+            "description": "Receipts and expenses are parsed with AI, matched to the correct client or project, and synced to your accounting tool."
+          }
+        ],
+        "tools": ["QuickBooks", "Stripe", "Xero", "n8n", "Google Sheets"]
+      },
+      {
+        "slug": "documents-data-collection",
+        "title": "Documents & Data Collection",
+        "problem": "You're chasing clients for documents over email, manually sorting attachments into folders, and re-typing form responses into your systems. Important files get lost in inboxes or saved in the wrong place.",
+        "solution": "We automate the entire document lifecycle — from request and collection to extraction, classification, and filing — using AI-powered parsing so your team never has to manually sort or re-enter data again.",
+        "workflows": [
+          {
+            "name": "Document Request & Collection",
+            "description": "Automated email sequences request documents from clients with reminders. Submitted files are auto-named and filed in the correct folder."
+          },
+          {
+            "name": "AI-Powered Form Processing",
+            "description": "Intake form responses are parsed by AI, categorized, and routed to the right workflow or team member based on content."
+          },
+          {
+            "name": "Email Attachment Sorting",
+            "description": "Incoming email attachments are automatically extracted, classified by type, and filed in Google Drive or Dropbox with consistent naming."
+          },
+          {
+            "name": "Contract Data Extraction",
+            "description": "Key terms, dates, and values are extracted from contracts and agreements using OCR and AI, then populated into your tracking system."
+          }
+        ],
+        "tools": ["Google Drive", "Dropbox", "n8n", "OpenAI", "Gmail"]
+      },
+      {
+        "slug": "reporting-analytics",
+        "title": "Reporting & Analytics",
+        "problem": "Your data lives in a dozen different tools and nobody has a clear picture of what's happening across the business. Building reports means exporting CSVs, copying into spreadsheets, and hoping the numbers are current.",
+        "solution": "We build automated data pipelines that pull from all your tools, consolidate into a single source of truth, and deliver live dashboards and scheduled reports — so your team always has accurate, up-to-date numbers.",
+        "workflows": [
+          {
+            "name": "Automated Weekly Report",
+            "description": "Every Monday, key metrics are pulled from your CRM, billing, and project tools, compiled into a formatted report, and delivered to your inbox."
+          },
+          {
+            "name": "KPI Threshold Alerts",
+            "description": "When a key metric crosses a threshold — revenue dips, churn spikes, pipeline slows — stakeholders get notified instantly in Slack or email."
+          },
+          {
+            "name": "Cross-System Data Sync",
+            "description": "Data from your CRM, accounting, and project management tools is synced to a central Google Sheet or database on a schedule, deduplicated and cleaned."
+          }
+        ],
+        "tools": ["Google Sheets", "n8n", "Metabase", "HubSpot", "Slack"]
+      },
+      {
+        "slug": "internal-ops-productivity",
+        "title": "Internal Ops & Productivity",
+        "problem": "New projects kick off without clear task assignments. Team members miss important updates because notifications are scattered across tools. Onboarding a new hire or client means a dozen manual steps that someone inevitably forgets.",
+        "solution": "We automate the operational glue — task creation, notifications, access provisioning, and handoffs — so your team stays aligned and nothing falls through the cracks when work moves between people or stages.",
+        "workflows": [
+          {
+            "name": "Project Kickoff Automation",
+            "description": "When a new project is created, tasks are automatically generated and assigned in your project management tool with deadlines and checklists."
+          },
+          {
+            "name": "Smart Notification Routing",
+            "description": "High-priority form submissions, payments, or support tickets trigger instant alerts to the right team member via Slack, email, or SMS."
+          },
+          {
+            "name": "Employee Onboarding Workflow",
+            "description": "New team members are automatically provisioned with accounts, added to the right channels, assigned training tasks, and introduced to their team."
+          }
+        ],
+        "tools": ["Slack", "Asana", "Trello", "Google Workspace", "n8n"]
+      },
+      {
+        "slug": "inventory-supply-chain",
+        "title": "Inventory & Supply Chain",
+        "problem": "Inventory counts are tracked in spreadsheets that are always out of date. You find out about stockouts after customers complain. Purchase orders are managed through email chains with no visibility into status.",
+        "solution": "We connect your inventory, e-commerce, and vendor systems so stock levels stay synced in real time, restock alerts fire before you run out, and purchase order status is visible across your entire operation.",
+        "workflows": [
+          {
+            "name": "Low-Stock Alert & Reorder",
+            "description": "When inventory drops below a threshold, your team gets alerted and a draft purchase order is created automatically for review."
+          },
+          {
+            "name": "Multi-Channel Inventory Sync",
+            "description": "Stock levels are synced across your e-commerce platform, POS system, and warehouse in near real-time to prevent overselling."
+          },
+          {
+            "name": "PO Status Tracking",
+            "description": "Purchase order updates from vendors are automatically captured and reflected in your internal tracking system with delivery ETA updates."
+          }
+        ],
+        "tools": ["Shopify", "WooCommerce", "n8n", "Google Sheets", "Slack"]
+      }
+    ]
+  },
+
   "contact": {
     "heading": "Let's talk about what you can automate",
     "subheading": "Tell us a bit about your business and we'll come back with ideas.",
