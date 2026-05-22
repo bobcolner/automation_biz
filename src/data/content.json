@@ -131,6 +131,12 @@
         "role": "Data & Engineering",
         "bio": "10-year Silicon Valley veteran specializing in data science, data engineering, and business analytics. Bob designs and builds the automation systems that make everything run.",
         "initials": "BC"
+      },
+      {
+        "name": "Spencer Bran",
+        "role": "Strategy & Engineering",
+        "bio": "8+ year veteran at the intersection of analytics engineering and business strategy. Spencer architects the systems, surfaces the insights & inefficiencies, and helps clients turn both into action.",
+        "initials": "SB"
       }
     ]
   },
