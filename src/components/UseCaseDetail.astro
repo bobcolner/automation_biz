@@ -7,6 +7,7 @@ interface Workflow {
 interface Props {
   slug: string;
   title: string;
+  headline: string;
   problem: string;
   solution: string;
   workflows: Workflow[];
@@ -15,19 +16,20 @@ interface Props {
   index: number;
 }
 
-const { slug, title, problem, solution, workflows, tools, icon, index } = Astro.props;
+const { slug, title, headline, problem, solution, workflows, tools, icon, index } = Astro.props;
 const isAlt = index % 2 === 1;
 ---
 
 <section id={slug} class:list={["px-6 py-16 md:py-20 border-t border-warm-gray", isAlt ? "bg-card" : "bg-warm-white"]}>
   <div class="mx-auto max-w-4xl">
     <!-- Header -->
-    <div class="flex items-start gap-4">
-      <div class="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-lg bg-crail/10 text-crail">
+    <div class="flex items-center gap-3">
+      <div class="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-lg bg-crail/10 text-crail">
         <Fragment set:html={icon} />
       </div>
-      <h2 class="font-serif text-3xl font-semibold text-warm-black">{title}</h2>
+      <span class="text-sm font-semibold uppercase tracking-wider text-crail">{title}</span>
     </div>
+    <h2 class="mt-5 max-w-3xl font-serif text-3xl font-semibold leading-tight text-warm-black md:text-4xl">{headline}</h2>
 
     <!-- Problem & Solution -->
     <div class="mt-8 grid gap-6 md:grid-cols-2">

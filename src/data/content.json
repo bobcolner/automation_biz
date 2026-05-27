@@ -1,15 +1,15 @@
 {
   "business": {
-    "name": "Workflow Partners",
-    "email": "hello@workflowpartners.com",
-    "pageTitle": "Workflow Partners — Automation for Growing Businesses",
+    "name": "Fathom Partners",
+    "email": "hello@fathompartners.com",
+    "pageTitle": "Fathom Partners — Automation for Growing Businesses",
     "metaDescription": "Automation consulting for small and mid-size businesses. We audit your workflows, build custom automations, and keep them running."
   },
 
   "hero": {
-    "tagline": "Stop doing work a machine should do",
-    "subtitle": "We help small and mid-size businesses eliminate repetitive tasks, connect their tools, and build automations that actually stick.",
-    "ctaText": "Get a free automation audit",
+    "tagline": "Seamless operations.<br>Elegant digital presence.",
+    "subtitle": "We partner with growing businesses to automate the work behind the scenes and craft the experience their clients love.",
+    "ctaText": "Get a free audit",
     "ctaSubtext": "No commitment. We'll show you what's possible."
   },
 
@@ -32,9 +32,15 @@
     ]
   },
 
+  "whatWeDo": {
+    "heading": "What we do",
+    "subheading": "Two halves of one business — the operations that run it, and the presence that grows it."
+  },
+
   "services": {
-    "heading": "What we automate",
-    "subheading": "Six areas where most small businesses lose the most time.",
+    "pillarLabel": "Automation",
+    "pillarTagline": "Your back office, on autopilot",
+    "subheading": "Where most small businesses lose the most time.",
     "items": [
       {
         "title": "Client & Lead Management",
@@ -93,6 +99,65 @@
     ]
   },
 
+  "digitalPresence": {
+    "pillarLabel": "Digital Presence",
+    "pillarTagline": "The face you show your clients",
+    "subheading": "A presence that looks as sharp as your operations now run.",
+    "items": [
+      {
+        "title": "Websites & Landing Pages",
+        "description": "Marketing sites that turn visitors into leads — fast, mobile-first, and built to convert.",
+        "examples": [
+          "New site design & builds",
+          "Redesigns & refreshes",
+          "Campaign landing pages"
+        ]
+      },
+      {
+        "title": "Brand & Visual Identity",
+        "description": "A consistent look that makes you memorable and earns trust at first glance.",
+        "examples": [
+          "Logo & wordmark",
+          "Color & typography systems",
+          "Brand guidelines"
+        ]
+      },
+      {
+        "title": "Client Portals & Web Apps",
+        "description": "Logged-in experiences your clients actually enjoy using — wired into the automations behind them.",
+        "examples": [
+          "Client dashboards & portals",
+          "Booking & intake flows",
+          "Custom web apps"
+        ]
+      },
+      {
+        "title": "Email Lifecycle Marketing",
+        "description": "Turn one-time buyers into repeat customers with email that runs itself.",
+        "examples": [
+          "Welcome & onboarding sequences",
+          "Win-back & re-engagement",
+          "Behavior-triggered campaigns",
+          "List segmentation & hygiene"
+        ]
+      },
+      {
+        "title": "Ongoing Care",
+        "description": "We keep your site fast, current, and online so it never becomes the thing you forgot about.",
+        "examples": [
+          "Hosting & maintenance",
+          "Content & copy updates",
+          "Performance & SEO health"
+        ]
+      }
+    ]
+  },
+
+  "approach": {
+    "heading": "Built on what's newly possible",
+    "subheading": "The latest intelligence technologies have quietly raised the ceiling on what a small team can deliver — operations that practically run themselves, and digital work that once took a full studio. We put them to work where they genuinely move the needle."
+  },
+
   "howItWorks": {
     "heading": "How it works",
     "subheading": "A straightforward process designed to deliver value quickly.",
@@ -100,17 +165,17 @@
       {
         "number": "01",
         "title": "Audit",
-        "description": "We map your current workflows, identify bottlenecks, and find the highest-impact automations — then present a clear plan with expected ROI."
+        "description": "We map how your business runs and how it shows up online, find the highest-impact opportunities, and present a clear plan with expected ROI."
       },
       {
         "number": "02",
         "title": "Build",
-        "description": "We design and implement your automations using the right tools for the job — n8n, Make, Zapier, or custom code — tested and documented."
+        "description": "We design and build — automations, websites, or both — using the right tools for the job, tested and documented before launch."
       },
       {
         "number": "03",
         "title": "Support",
-        "description": "We monitor, maintain, and iterate on your automations so they keep working as your business evolves. No set-it-and-forget-it."
+        "description": "We monitor, maintain, and iterate on what we build so it keeps working as your business evolves. No set-it-and-forget-it."
       }
     ]
   },
@@ -120,22 +185,18 @@
     "subheading": "Every engagement includes a data security review. We audit access, enforce permissions, and make sure your data is secure."
   },
 
-  "tools": ["n8n", "Make", "Zapier", "Python", "Google Workspace", "Slack", "HubSpot"],
-
   "about": {
     "heading": "Who we are",
-    "subheading": "A small team that's done this at scale — now helping growing businesses get the same leverage.",
+    "subheading": "Between us, we've worked across software, data, analytics, marketing, finance, logistics, and sales operations — the same functions we now automate for clients. You work with us directly, the people who do the work.",
     "team": [
       {
         "name": "Bob Colner",
-        "role": "Data & Engineering",
-        "bio": "10-year Silicon Valley veteran specializing in data science, data engineering, and business analytics. Bob designs and builds the automation systems that make everything run.",
+        "bio": "Principal Consultant",
         "initials": "BC"
       },
       {
         "name": "Spencer Bran",
-        "role": "Strategy & Engineering",
-        "bio": "8+ year veteran at the intersection of analytics engineering and business strategy. Spencer architects the systems, surfaces the insights & inefficiencies, and helps clients turn both into action.",
+        "bio": "Principal Consultant",
         "initials": "SB"
       }
     ]
@@ -143,29 +204,30 @@
 
   "useCases": {
     "heading": "Use Cases",
-    "subheading": "See how we tackle the most common automation challenges for growing businesses.",
+    "subheading": "The repetitive work we take off your plate — and what your business looks like once it's gone.",
     "items": [
       {
         "slug": "client-lead-management",
         "title": "Client & Lead Management",
-        "problem": "Your team spends hours manually entering leads, copying contact info between tools, and sending follow-up emails one at a time. Prospects slip through the cracks because there's no system keeping track of who needs attention next.",
-        "solution": "We build automated pipelines that capture leads from every source, route them to the right person, trigger personalized follow-ups, and keep your CRM updated — so nothing gets missed and your team focuses on closing, not copying.",
+        "headline": "Never let a lead go cold",
+        "problem": "Leads arrive faster than your team can log them. Contacts get copied between tools by hand, follow-ups depend on someone remembering, and the deals you lose are the ones nobody got back to in time.",
+        "solution": "Every lead is captured, enriched, and routed the moment it lands — then nudged with the right follow-up until it closes. Your team stops doing data entry and starts working the deals that are ready.",
         "workflows": [
           {
             "name": "Web Form to CRM Pipeline",
-            "description": "New form submissions are automatically enriched, deduplicated, and added to your CRM with the right owner and stage assigned."
+            "description": "Form submissions are enriched, deduplicated, and dropped into your CRM with the right owner and stage."
           },
           {
             "name": "Automated Follow-Up Sequences",
-            "description": "Multi-step email and SMS sequences trigger based on lead behavior — opened, clicked, no response — keeping prospects warm without manual effort."
+            "description": "Email and SMS sequences trigger on lead behavior — opened, clicked, ignored — keeping prospects warm on their own."
           },
           {
             "name": "Client Onboarding Workflow",
-            "description": "Once a deal closes, automatically send welcome emails, collect documents, create project folders, and assign onboarding tasks to your team."
+            "description": "The moment a deal closes: welcome emails go out, documents get collected, and onboarding tasks land on your team."
           },
           {
             "name": "Appointment Scheduling & Reminders",
-            "description": "Prospects book directly from your calendar link. Confirmations, reminders, and follow-ups happen automatically."
+            "description": "Prospects book straight from your calendar. Confirmations, reminders, and follow-ups send themselves."
           }
         ],
         "tools": ["HubSpot", "Salesforce", "n8n", "Google Workspace", "Calendly", "Slack"]
@@ -173,20 +235,21 @@
       {
         "slug": "billing-financial-ops",
         "title": "Billing & Financial Ops",
-        "problem": "Invoices are created manually, payments are tracked in spreadsheets, and matching expenses to the right job takes hours of bookkeeping. Financial data lives in multiple systems that don't talk to each other.",
-        "solution": "We connect your billing, accounting, and project tools so invoices are generated automatically, payments are tracked in real time, and financial data stays consistent across every system without manual re-entry.",
+        "headline": "Get paid faster, chase less",
+        "problem": "Invoices wait on someone to remember to send them. Payments get reconciled by hand. Expenses pile up unmatched, and your real financial picture is always a few days — or a few spreadsheets — behind.",
+        "solution": "Invoices fire the moment work is done, payments reconcile themselves, and every expense lands against the right job. Your books stay current without anyone touching a spreadsheet.",
         "workflows": [
           {
             "name": "Auto-Invoice on Milestone",
-            "description": "When a project hits a billing milestone, an invoice is automatically generated in QuickBooks or Stripe and sent to the client."
+            "description": "Hit a billing milestone and an invoice is generated in QuickBooks or Stripe and sent to the client."
           },
           {
             "name": "Payment Received Notifications",
-            "description": "When a payment lands, your team gets notified in Slack, the CRM record updates, and the project status advances automatically."
+            "description": "A payment lands, your team gets pinged in Slack, the CRM updates, and the project advances."
           },
           {
             "name": "Expense-to-Job Matching",
-            "description": "Receipts and expenses are parsed with AI, matched to the correct client or project, and synced to your accounting tool."
+            "description": "Receipts are parsed with AI, matched to the right client or project, and synced to your books."
           }
         ],
         "tools": ["QuickBooks", "Stripe", "Xero", "n8n", "Google Sheets"]
@@ -194,24 +257,25 @@
       {
         "slug": "documents-data-collection",
         "title": "Documents & Data Collection",
-        "problem": "You're chasing clients for documents over email, manually sorting attachments into folders, and re-typing form responses into your systems. Important files get lost in inboxes or saved in the wrong place.",
-        "solution": "We automate the entire document lifecycle — from request and collection to extraction, classification, and filing — using AI-powered parsing so your team never has to manually sort or re-enter data again.",
+        "headline": "Stop chasing paperwork",
+        "problem": "You're emailing clients for the same documents twice, sorting attachments by hand, and re-typing form answers into your systems. Files end up lost in inboxes or saved where no one can find them.",
+        "solution": "Documents get requested, collected, read, and filed automatically — with AI pulling the key data out so nobody re-types anything. Hours of manual sorting just disappear.",
         "workflows": [
           {
             "name": "Document Request & Collection",
-            "description": "Automated email sequences request documents from clients with reminders. Submitted files are auto-named and filed in the correct folder."
+            "description": "Clients are emailed for documents with automatic reminders; what comes back is named and filed for you."
           },
           {
             "name": "AI-Powered Form Processing",
-            "description": "Intake form responses are parsed by AI, categorized, and routed to the right workflow or team member based on content."
+            "description": "Intake responses are parsed by AI, categorized, and routed to the right workflow or person."
           },
           {
             "name": "Email Attachment Sorting",
-            "description": "Incoming email attachments are automatically extracted, classified by type, and filed in Google Drive or Dropbox with consistent naming."
+            "description": "Incoming attachments are extracted, classified, and filed in Drive or Dropbox with consistent naming."
           },
           {
             "name": "Contract Data Extraction",
-            "description": "Key terms, dates, and values are extracted from contracts and agreements using OCR and AI, then populated into your tracking system."
+            "description": "Key terms, dates, and values are pulled from contracts with OCR and AI, then fed into your tracker."
           }
         ],
         "tools": ["Google Drive", "Dropbox", "n8n", "OpenAI", "Gmail"]
@@ -219,20 +283,21 @@
       {
         "slug": "reporting-analytics",
         "title": "Reporting & Analytics",
-        "problem": "Your data lives in a dozen different tools and nobody has a clear picture of what's happening across the business. Building reports means exporting CSVs, copying into spreadsheets, and hoping the numbers are current.",
-        "solution": "We build automated data pipelines that pull from all your tools, consolidate into a single source of truth, and deliver live dashboards and scheduled reports — so your team always has accurate, up-to-date numbers.",
+        "headline": "Know your numbers in real time",
+        "problem": "Your data is scattered across a dozen tools and no one has the full picture. Every report means exporting CSVs, pasting into spreadsheets, and hoping the numbers are still current by the time anyone reads them.",
+        "solution": "Live data flows from every tool into one source of truth, with dashboards and scheduled reports that are always current. Decisions get made on real numbers, not last week's export.",
         "workflows": [
           {
             "name": "Automated Weekly Report",
-            "description": "Every Monday, key metrics are pulled from your CRM, billing, and project tools, compiled into a formatted report, and delivered to your inbox."
+            "description": "Every Monday, metrics from your CRM, billing, and project tools land in your inbox as a formatted report."
           },
           {
             "name": "KPI Threshold Alerts",
-            "description": "When a key metric crosses a threshold — revenue dips, churn spikes, pipeline slows — stakeholders get notified instantly in Slack or email."
+            "description": "A metric crosses a line — revenue dips, churn spikes, pipeline slows — and the right people hear about it instantly."
           },
           {
             "name": "Cross-System Data Sync",
-            "description": "Data from your CRM, accounting, and project management tools is synced to a central Google Sheet or database on a schedule, deduplicated and cleaned."
+            "description": "Data from every tool syncs to one Sheet or database on a schedule, deduplicated and cleaned."
           }
         ],
         "tools": ["Google Sheets", "n8n", "Metabase", "HubSpot", "Slack"]
@@ -240,20 +305,21 @@
       {
         "slug": "internal-ops-productivity",
         "title": "Internal Ops & Productivity",
-        "problem": "New projects kick off without clear task assignments. Team members miss important updates because notifications are scattered across tools. Onboarding a new hire or client means a dozen manual steps that someone inevitably forgets.",
-        "solution": "We automate the operational glue — task creation, notifications, access provisioning, and handoffs — so your team stays aligned and nothing falls through the cracks when work moves between people or stages.",
+        "headline": "Nothing falls through the cracks",
+        "problem": "Projects start without clear ownership, updates get buried across a dozen tools, and onboarding a hire or client means a checklist someone always forgets a step on.",
+        "solution": "The operational busywork — handoffs, alerts, provisioning, onboarding — runs itself in the background. Work moves between people and stages without anyone dropping the ball.",
         "workflows": [
           {
             "name": "Project Kickoff Automation",
-            "description": "When a new project is created, tasks are automatically generated and assigned in your project management tool with deadlines and checklists."
+            "description": "A new project spins up tasks, deadlines, and checklists, assigned to the right people automatically."
           },
           {
             "name": "Smart Notification Routing",
-            "description": "High-priority form submissions, payments, or support tickets trigger instant alerts to the right team member via Slack, email, or SMS."
+            "description": "Priority submissions, payments, or tickets ping the right team member via Slack, email, or SMS."
           },
           {
             "name": "Employee Onboarding Workflow",
-            "description": "New team members are automatically provisioned with accounts, added to the right channels, assigned training tasks, and introduced to their team."
+            "description": "New hires are provisioned with accounts, added to channels, and assigned training — no checklist required."
           }
         ],
         "tools": ["Slack", "Asana", "Trello", "Google Workspace", "n8n"]
@@ -261,20 +327,21 @@
       {
         "slug": "inventory-supply-chain",
         "title": "Inventory & Supply Chain",
-        "problem": "Inventory counts are tracked in spreadsheets that are always out of date. You find out about stockouts after customers complain. Purchase orders are managed through email chains with no visibility into status.",
-        "solution": "We connect your inventory, e-commerce, and vendor systems so stock levels stay synced in real time, restock alerts fire before you run out, and purchase order status is visible across your entire operation.",
+        "headline": "Never get caught short on stock",
+        "problem": "Your inventory counts are out of date the moment you save the spreadsheet. You learn about stockouts from frustrated customers, and purchase orders live in email threads no one can track.",
+        "solution": "Stock levels stay synced across every channel in real time, reorder alerts fire before you run out, and every purchase order is visible from request to delivery. No more guessing what's on the shelf.",
         "workflows": [
           {
             "name": "Low-Stock Alert & Reorder",
-            "description": "When inventory drops below a threshold, your team gets alerted and a draft purchase order is created automatically for review."
+            "description": "Stock dips below a threshold, your team is alerted, and a draft purchase order is ready for review."
           },
           {
             "name": "Multi-Channel Inventory Sync",
-            "description": "Stock levels are synced across your e-commerce platform, POS system, and warehouse in near real-time to prevent overselling."
+            "description": "Stock levels stay synced across your store, POS, and warehouse in near real-time to prevent overselling."
           },
           {
             "name": "PO Status Tracking",
-            "description": "Purchase order updates from vendors are automatically captured and reflected in your internal tracking system with delivery ETA updates."
+            "description": "Vendor updates are captured automatically and reflected in your tracker with live delivery ETAs."
           }
         ],
         "tools": ["Shopify", "WooCommerce", "n8n", "Google Sheets", "Slack"]
@@ -283,7 +350,7 @@
   },
 
   "contact": {
-    "heading": "Let's talk about what you can automate",
+    "heading": "Let's talk about what we can build for you",
     "subheading": "Tell us a bit about your business and we'll come back with ideas.",
     "submitText": "Send message",
     "successHeading": "Message received",
