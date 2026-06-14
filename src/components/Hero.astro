@@ -12,31 +12,28 @@ const { business, hero } = content;
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
   >
-    <circle cx="900" cy="80" r="320" stroke="rgba(193,95,60,0.18)" stroke-width="1" />
-    <circle cx="900" cy="80" r="240" stroke="rgba(193,95,60,0.14)" stroke-width="1" />
-    <circle cx="900" cy="80" r="160" stroke="rgba(193,95,60,0.10)" stroke-width="1" />
-    <circle cx="200" cy="550" r="280" stroke="rgba(107,127,107,0.16)" stroke-width="1" />
-    <circle cx="200" cy="550" r="200" stroke="rgba(107,127,107,0.12)" stroke-width="1" />
-    <circle cx="200" cy="550" r="120" stroke="rgba(107,127,107,0.08)" stroke-width="1" />
+    <circle cx="900" cy="80" r="320" stroke="rgba(29,106,114,0.18)" stroke-width="1" />
+    <circle cx="900" cy="80" r="240" stroke="rgba(29,106,114,0.14)" stroke-width="1" />
+    <circle cx="900" cy="80" r="160" stroke="rgba(29,106,114,0.10)" stroke-width="1" />
+    <circle cx="200" cy="550" r="280" stroke="rgba(93,202,165,0.16)" stroke-width="1" />
+    <circle cx="200" cy="550" r="200" stroke="rgba(93,202,165,0.12)" stroke-width="1" />
+    <circle cx="200" cy="550" r="120" stroke="rgba(93,202,165,0.08)" stroke-width="1" />
     <line x1="0" y1="600" x2="700" y2="0" stroke="rgba(255,255,255,0.06)" stroke-width="1" />
     <line x1="500" y1="600" x2="1200" y2="0" stroke="rgba(255,255,255,0.06)" stroke-width="1" />
     <line x1="100" y1="0" x2="1100" y2="600" stroke="rgba(255,255,255,0.04)" stroke-width="1" />
-    <circle cx="600" cy="90" r="3" fill="rgba(193,95,60,0.35)" />
-    <circle cx="300" cy="400" r="3" fill="rgba(193,95,60,0.30)" />
-    <circle cx="900" cy="350" r="2.5" fill="rgba(107,127,107,0.30)" />
-    <circle cx="1000" cy="180" r="2.5" fill="rgba(193,95,60,0.28)" />
-    <circle cx="150" cy="200" r="2.5" fill="rgba(107,127,107,0.25)" />
-    <circle cx="750" cy="500" r="2.5" fill="rgba(193,95,60,0.22)" />
-    <circle cx="450" cy="250" r="2" fill="rgba(107,127,107,0.20)" />
-    <circle cx="1050" cy="480" r="2" fill="rgba(193,95,60,0.20)" />
+    <circle cx="600" cy="90" r="3" fill="rgba(29,106,114,0.35)" />
+    <circle cx="300" cy="400" r="3" fill="rgba(29,106,114,0.30)" />
+    <circle cx="900" cy="350" r="2.5" fill="rgba(93,202,165,0.30)" />
+    <circle cx="1000" cy="180" r="2.5" fill="rgba(29,106,114,0.28)" />
+    <circle cx="150" cy="200" r="2.5" fill="rgba(93,202,165,0.25)" />
+    <circle cx="750" cy="500" r="2.5" fill="rgba(29,106,114,0.22)" />
+    <circle cx="450" cy="250" r="2" fill="rgba(93,202,165,0.20)" />
+    <circle cx="1050" cy="480" r="2" fill="rgba(29,106,114,0.20)" />
   </svg>
 
   <div class="pointer-events-none absolute -top-20 left-1/2 h-[500px] w-[800px] -translate-x-1/2 rounded-full bg-crail/10 blur-3xl"></div>
 
   <div class="relative mx-auto max-w-3xl text-center">
-    <p class="mb-4 text-sm font-medium tracking-widest uppercase text-crail">
-      {business.name}
-    </p>
     <h1 class="font-serif text-5xl font-semibold leading-tight tracking-tight text-warm-white md:text-6xl lg:text-7xl" set:html={hero.tagline} />
     <p class="mx-auto mt-5 max-w-xl text-xl leading-relaxed text-warm-white/60">
       {hero.subtitle}
@@ -44,7 +41,7 @@ const { business, hero } = content;
     <div class="mt-8">
       <a
         href="#contact"
-        class="hero-cta inline-block rounded-full bg-crail px-9 py-4 text-base font-medium text-warm-white transition-all hover:bg-crail-hover hover:shadow-lg hover:shadow-crail/20"
+        class="hero-cta inline-block rounded-full bg-amber px-9 py-4 text-base font-medium text-warm-white transition-all hover:bg-amber-hover hover:shadow-lg hover:shadow-amber/20"
       >
         {hero.ctaText}
       </a>
@@ -55,16 +52,56 @@ const { business, hero } = content;
 
 <style>
   .hero-bg {
+    position: relative;
     background-color: var(--color-warm-black);
     background-image:
-      linear-gradient(rgba(255,255,255,0.06) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(255,255,255,0.06) 1px, transparent 1px);
-    background-size: 80px 80px;
+      linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px),
+      linear-gradient(
+        120deg,
+        rgba(29, 106, 114, 0.55) 0%,
+        rgba(44, 44, 42, 0.85) 42%,
+        rgba(21, 80, 87, 0.5) 74%,
+        rgba(29, 106, 114, 0.45) 100%
+      );
+    background-size: 80px 80px, 80px 80px, 100% 100%;
+  }
+  /* gold shimmer sweeping left to right */
+  .hero-bg::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: linear-gradient(
+      75deg,
+      transparent 38%,
+      rgba(245, 166, 35, 0.04) 47%,
+      rgba(245, 166, 35, 0.12) 50%,
+      rgba(245, 166, 35, 0.04) 53%,
+      transparent 62%
+    );
+    background-size: 250% 100%;
+    background-repeat: no-repeat;
+    animation: hero-shimmer 11s linear infinite;
+  }
+  @keyframes hero-shimmer {
+    0% {
+      background-position: 160% 0;
+    }
+    100% {
+      background-position: -60% 0;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .hero-bg::before {
+      animation: none;
+      background-position: 50% 0;
+    }
   }
   .hero-cta {
-    box-shadow: 0 0 20px rgba(193,95,60,0.25), 0 0 60px rgba(193,95,60,0.08);
+    box-shadow: 0 0 20px rgba(245,166,35,0.25), 0 0 60px rgba(245,166,35,0.08);
   }
   .hero-cta:hover {
-    box-shadow: 0 0 25px rgba(193,95,60,0.35), 0 0 80px rgba(193,95,60,0.12);
+    box-shadow: 0 0 25px rgba(245,166,35,0.35), 0 0 80px rgba(245,166,35,0.12);
   }
 </style>
