@@ -2,13 +2,13 @@
   "business": {
     "name": "Coastal Workflows",
     "email": "hello@coastalworkflows.com",
-    "pageTitle": "Coastal Workflows — Seamless Operations & Elegant Digital Presence",
-    "metaDescription": "Coastal Workflows helps growing businesses run seamless operations and build an elegant digital presence — from workflow automation to websites, brand, and client experiences."
+    "pageTitle": "Coastal Workflows — Seamless Operations Through Automation",
+    "metaDescription": "Coastal Workflows helps growing businesses run seamless operations by automating the work behind the scenes — from lead management to billing, reporting, and internal ops."
   },
 
   "hero": {
-    "tagline": "Seamless operations.<br>Elegant digital presence.",
-    "subtitle": "We partner with growing businesses to automate the work behind the scenes and craft the experience their clients love to use.",
+    "tagline": "Seamless operations.<br><span class=\"whitespace-nowrap\">Efficiency through automation.</span>",
+    "subtitle": "We are experienced technology partners who can automate the work behind the scenes.",
     "ctaText": "Get a free audit",
     "ctaSubtext": "No commitment. We'll show you what's possible."
   },
@@ -34,7 +34,7 @@
 
   "whatWeDo": {
     "heading": "What we do",
-    "subheading": "Two halves of one business — the operations that run it, and the presence that grows it."
+    "subheading": "We automate the operations that run your business — so your team can focus on the work that grows it."
   },
 
   "services": {
@@ -192,12 +192,14 @@
       {
         "name": "Bob Colner",
         "bio": "Principal Consultant",
-        "initials": "BC"
+        "initials": "BC",
+        "email": "bob@coastalworkflows.com"
       },
       {
         "name": "Spencer Bran",
         "bio": "Principal Consultant",
-        "initials": "SB"
+        "initials": "SB",
+        "email": "spencer@coastalworkflows.com"
       }
     ]
   },

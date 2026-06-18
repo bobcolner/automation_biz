@@ -35,7 +35,7 @@ const { business, hero } = content;
 
   <div class="relative mx-auto max-w-3xl text-center">
     <h1 class="font-serif text-5xl font-semibold leading-tight tracking-tight text-warm-white md:text-6xl lg:text-7xl" set:html={hero.tagline} />
-    <p class="mx-auto mt-5 max-w-xl text-xl leading-relaxed text-warm-white/60">
+    <p class="mx-auto mt-5 max-w-xl text-2xl font-medium leading-relaxed text-warm-white/75 md:text-3xl">
       {hero.subtitle}
     </p>
     <div class="mt-8">
@@ -46,57 +46,25 @@ const { business, hero } = content;
         {hero.ctaText}
       </a>
     </div>
-    <p class="mt-6 text-base text-warm-white/35">{hero.ctaSubtext}</p>
+    <p class="mt-6 text-lg text-warm-white/55">{hero.ctaSubtext}</p>
   </div>
 </section>
 
 <style>
   .hero-bg {
     position: relative;
-    background-color: var(--color-warm-black);
+    background-color: #0F3338;
     background-image:
       linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
       linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px),
       linear-gradient(
         120deg,
-        rgba(29, 106, 114, 0.55) 0%,
-        rgba(44, 44, 42, 0.85) 42%,
-        rgba(21, 80, 87, 0.5) 74%,
-        rgba(29, 106, 114, 0.45) 100%
+        #134349 0%,
+        #1D6A72 45%,
+        #15555C 72%,
+        #0F3338 100%
       );
     background-size: 80px 80px, 80px 80px, 100% 100%;
-  }
-  /* gold shimmer sweeping left to right */
-  .hero-bg::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-    background: linear-gradient(
-      75deg,
-      transparent 38%,
-      rgba(245, 166, 35, 0.04) 47%,
-      rgba(245, 166, 35, 0.12) 50%,
-      rgba(245, 166, 35, 0.04) 53%,
-      transparent 62%
-    );
-    background-size: 250% 100%;
-    background-repeat: no-repeat;
-    animation: hero-shimmer 11s linear infinite;
-  }
-  @keyframes hero-shimmer {
-    0% {
-      background-position: 160% 0;
-    }
-    100% {
-      background-position: -60% 0;
-    }
-  }
-  @media (prefers-reduced-motion: reduce) {
-    .hero-bg::before {
-      animation: none;
-      background-position: 50% 0;
-    }
   }
   .hero-cta {
     box-shadow: 0 0 20px rgba(245,166,35,0.25), 0 0 60px rgba(245,166,35,0.08);

@@ -1,16 +1,15 @@
 ---
 import content from "../data/content.json";
+import Logo from "./Logo.astro";
 const { business } = content;
 const year = new Date().getFullYear();
 ---
 
 <footer class="border-t border-white/10 bg-warm-black px-6 py-8">
   <div class="mx-auto flex max-w-5xl flex-col items-center justify-between gap-3 md:flex-row">
-    <div>
-      <p class="font-serif text-lg font-medium text-warm-white">
-        {business.name}
-      </p>
-      <p class="mt-0.5 text-sm text-warm-white/40">
+    <div class="text-warm-white">
+      <Logo size="text-lg" />
+      <p class="mt-1 text-sm text-warm-white/40">
         {business.email}
       </p>
     </div>

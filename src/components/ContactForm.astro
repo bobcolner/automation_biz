@@ -110,9 +110,6 @@ const { contact } = content;
       {contact.errorMessage}
     </div>
 
-    <p id="privacy-note" class="mt-4 text-center text-xs text-warm-white/30">
-      {contact.privacyNote}
-    </p>
   </div>
 </section>
 
@@ -121,7 +118,6 @@ const { contact } = content;
   const btn = document.getElementById("submit-btn") as HTMLButtonElement;
   const successMsg = document.getElementById("success-msg")!;
   const errorMsg = document.getElementById("error-msg")!;
-  const privacyNote = document.getElementById("privacy-note")!;
 
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
@@ -138,7 +134,6 @@ const { contact } = content;
 
       if (response.ok) {
         form.classList.add("hidden");
-        privacyNote.classList.add("hidden");
         successMsg.classList.remove("hidden");
       } else {
         throw new Error("Form submission failed");
