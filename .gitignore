@@ -4,3 +4,6 @@ dist/
 .env
 /.idea
 .claude/launch.json
+
+# generated logo artifact (regenerate with: node tools/logo/generate.mjs)
+tools/logo/coastal-logo.png
