@@ -9,7 +9,7 @@ website build — the generated PNG is intentionally kept out of `public/`.
 - `logo-lockup.svg` — the source artwork (mirrors the wave mark in
   `src/components/Logo.astro`, plus the "Coastal Workflows" wordmark).
 - `generate.mjs` — rasterizes the SVG to `coastal-logo.png`.
-- `coastal-logo.png` — generated output (git-ignored; regenerate any time).
+- `coastal-logo.png` — generated output (committed; regenerate any time).
 
 ## Usage
 
